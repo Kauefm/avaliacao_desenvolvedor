@@ -1,0 +1,35 @@
+<div class="container">
+
+  <div class="card">
+    <%= simple_form_for(@sale) do |f| %>
+    <%= f.input :file %>
+    <%= f.submit%>
+    <% end %>
+  </div>
+
+<div class="card">
+  <h1> Total de receitas é de <%= @total_sales %> </h1>
+  <table style="width:100%">
+    <tr>
+      <th>Nome</th>
+      <th>Descrição do produto</th>
+      <th>Preço (R$) </th>
+      <th>Quantidade</th>
+      <th>Total gasto (R$) </th>
+      <th>Endereço</th>
+      <th>Cliente</th>
+    </tr>
+
+    <%@sales.each do |sale| %>
+          <tr>
+            <td> <%= sale.name %> </td>
+            <td> <%= sale.description %> </td>
+            <td> <%= sale.price %> </td>
+            <td> <%= sale.quantity %> </td>
+            <td> <%= sale.address %> </td>
+            <td> <%= sale.client %> </td>
+          </tr>
+        <% end %>
+    </table>
+  </div>
+</div>

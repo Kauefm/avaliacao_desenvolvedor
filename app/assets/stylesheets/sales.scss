@@ -1,0 +1,45 @@
+// Place all the styles related to the Sales controller here.
+// They will automatically be included in application.css.
+// You can use Sass (SCSS) here: http://sass-lang.com/
+
+.navbar {
+  height: 70px;
+  position: fixed;
+  margin-top: -70px;
+  margin-left: -10px;
+  width: 100%;
+  z-index: 1;
+  align-items: center;
+  justify-content: center;
+  background-color: blue;
+  color: white;
+  display: flex;
+}
+
+.navbar-photo{
+  position: fixed;
+  left: 10px;
+  top: 10px;
+  width: 50px;
+  border-radius: 50%;
+  z-index: 2;
+}
+
+.container{
+  margin-top:70px;
+  width: 80hv;
+}
+
+.card {
+  background-size: cover !important;
+  background-position: center;
+  color: black;
+  position: relative;
+  margin-left: 10px;
+  margin-right: 10px;
+  margin-top: 10px;
+  background-color: #ffffff;
+  border-radius: 5px;
+  padding: 20px;
+  box-shadow: 0 4px 8px 0 rgba(0,0,0,0.2);
+  }
